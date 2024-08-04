@@ -5,7 +5,7 @@ date: 2024-08-04 09:36:15 +0100
 categories: game-dev godot
 ---
 
-Recently, I wanted to achieve screen wrapping in Godot 4 that also checks for collisions first. I found a few solutions for screen wrapping but they all tend to break the golden rule of changing the `GlobalPosition` of a `PhysicsBody` which it breaks collision detection, like this one on [kidscancode.org](https://kidscancode.org/godot_recipes/4.x/2d/screen_wrap/).
+Recently, I wanted to achieve screen wrapping in Godot 4 that also checks for collisions first. I found a few solutions for screen wrapping but they all tend to break the golden rule of changing the `GlobalPosition` of a `PhysicsBody` which breaks collision detection, like this one on [kidscancode.org](https://kidscancode.org/godot_recipes/4.x/2d/screen_wrap/).
 
 ### My Requirements
 
