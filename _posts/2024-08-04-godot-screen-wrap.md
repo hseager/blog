@@ -19,7 +19,7 @@ Unless there is an object on the other side blocking the player moving there.
 
 ### My Solution
 
-To achieve this, I added 2 `RayCast2d` on each side of the screen that follow the player on the Y Axis. To visualise this, I've turned on `Visible Collision Paths` in the debug menu which shows the RayCasts as small blue arrows like in the demo below. They can then be used them to detect if there's space to move on the other side of the screen.
+To achieve this, I added 2 `RayCast2d` on each side of the screen that follow the player on the Y Axis. They can then be used to detect if there is enough space to move on the other side of the screen. To visualise this, I've turned on `Visible Collision Paths` in the debug menu which shows the RayCasts as small blue arrows like in the demo below.
 
 <video style="width: 100%; max-width: 600px; height: auto; display: block;" autoplay muted loop>
   <source src="{{ site.baseurl }}/assets/solution-demo.webm" type="video/webm">

@@ -28,7 +28,7 @@ url: "https://hseager.github.io" # the base hostname & protocol for your site, e
 theme: minima
 
 author:
-  name: Harvey Seager
+  name: hseager
   email: ""
 
 minima:
