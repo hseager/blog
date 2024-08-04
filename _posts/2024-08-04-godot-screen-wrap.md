@@ -11,18 +11,18 @@ Recently, I wanted to achieve screen wrapping in Godot 4 that also checks for co
 
 When the player moves off the X axis of the screen, they should appear on the other side.
 
-![Screen wrap requirement 1](/assets/screenwrap1.webp)
+![Screen wrap requirement 1]({{ site.baseurl }}/assets/screenwrap1.webp)
 
 Unless there is an object on the other side blocking the player moving there.
 
-![Screen wrap requirement 2](/assets/screenwrap2.webp)
+![Screen wrap requirement 2]({{ site.baseurl }}/assets/screenwrap2.webp)
 
 ### My Solution
 
 To achieve this, I added 2 `RayCast2d` on each side of the screen that follow the player on the Y Axis. To visualise this, I've turned on `Visible Collision Paths` in the debug menu which shows the RayCasts as small blue arrows like in the demo below. They can then be used them to detect if there's space to move on the other side of the screen.
 
 <video width="480" autoplay muted loop>
-  <source src="/assets/solution-demo.webm" type="video/webm">
+  <source src="{{ site.baseurl }}/assets/solution-demo.webm" type="video/webm">
   Your browser does not support the video tag.
 </video>
 
@@ -32,7 +32,7 @@ The RayCasts are positioned at the top and bottom of the player collision box to
 
 First, we want to add 4 `RayCast2d` nodes under the Player Scene in Godot and check `hit_from_inside` for each. It doesn't matter too much on their configuration in the editor as we will be changing them programmatically.
 
-![Godot editor](/assets/editor.webp)
+![Godot editor]({{ site.baseurl }}/assets/editor.webp)
 
 Next, in our Player script we add the following. This is in C# but I'm sure a certain AI ChatBot can convert it to GDScript if that's what you're using.
 
